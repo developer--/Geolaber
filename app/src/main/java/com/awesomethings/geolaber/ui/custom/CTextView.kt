@@ -1,4 +1,4 @@
-package com.awesomethings.geolaber.ui
+package com.awesomethings.geolaber.ui.custom
 
 import android.content.Context
 import android.content.res.TypedArray
@@ -8,14 +8,11 @@ import android.widget.TextView
 import com.awesomethings.geolaber.R
 
 /**
- * Created by Master on 7/30/16.
+ * Created by Jemo on 7/30/16.
  */
-class CTextView : TextView{
+class CTextView : TextView {
 
     var fontNumberPosition : Int = 0
-    constructor(context: Context?) : super(context) {
-
-    }
 
     constructor(context: Context?, attributes: AttributeSet) : super(context, attributes) {
         val attrs : TypedArray = context?.theme?.obtainStyledAttributes(attributes, R.styleable.CTextView,0,0)!!

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="5dp"
     android:layout_width="match_parent"
@@ -24,16 +25,17 @@
                 android:layout_height="100dp"
                 />
 
-            <com.awesomethings.geolaber.ui.CTextView
+            <com.awesomethings.geolaber.ui.custom.CTextView
                 android:id="@+id/list_item_geolaber_name_text_view_id"
                 android:layout_toRightOf="@id/list_item_geolaber_profile_pic_image_view_id"
                 android:layout_marginLeft="15dp"
                 android:text="გიჟი ალექსა"
+                app:font_name="EX_CAPS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 />
 
-            <com.awesomethings.geolaber.ui.CTextView
+            <com.awesomethings.geolaber.ui.custom.CTextView
                 android:id="@+id/list_item_geolaber_job_type_text_view_id"
                 android:layout_below="@id/list_item_geolaber_name_text_view_id"
                 android:layout_toRightOf="@id/list_item_geolaber_profile_pic_image_view_id"
