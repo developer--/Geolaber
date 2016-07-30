@@ -37,10 +37,12 @@
                     tools:targetApi="lollipop">
 
                     <RelativeLayout
+                        android:id="@+id/test_1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
                         <com.awesomethings.geolaber.ui.custom.CTextView
+                            android:id="@+id/toolbar_title"
                             android:text="GEOLABER"
                             android:layout_centerInParent="true"
                             android:layout_width="wrap_content"

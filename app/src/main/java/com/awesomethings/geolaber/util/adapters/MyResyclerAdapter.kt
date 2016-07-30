@@ -15,7 +15,7 @@ import com.awesomethings.geolaber.util.extensions.setImage
 /**
  * Created by Jemo on 7/30/16.
  */
-class MyResyclerAdapter (var myData: List<Geolaber>) : RecyclerView.Adapter<MyResyclerAdapter.MyHolder>() {
+class MyResyclerAdapter (val myData: List<Geolaber>) : RecyclerView.Adapter<MyResyclerAdapter.MyHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MyHolder? {
         val itemView = View.inflate(parent!!.context, R.layout.geolaber_list_item,parent)

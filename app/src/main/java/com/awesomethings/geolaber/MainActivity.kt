@@ -7,6 +7,7 @@ import butterknife.ButterKnife
 import butterknife.bindView
 import com.awesomethings.geolaber.ui.MainPageFragment
 import com.awesomethings.geolaber.util.adapters.MyPagerAdapter
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         try {
             setContentView(R.layout.activity_main)
             ButterKnife.bind(this)
-
+            toolbar_title.text = "საოცარია"
             initPager()
         }catch (e : Exception){
             e.printStackTrace()

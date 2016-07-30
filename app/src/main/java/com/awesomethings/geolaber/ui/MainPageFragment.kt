@@ -2,17 +2,15 @@ package com.awesomethings.geolaber.ui
 
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import butterknife.ButterKnife
-import butterknife.bindView
 import com.awesomethings.geolaber.R
 import com.awesomethings.geolaber.models.Geolaber
 import com.awesomethings.geolaber.models.database.DummyData
 import com.awesomethings.geolaber.ui.base.BaseFragment
 import com.awesomethings.geolaber.util.adapters.MyResyclerAdapter
+import kotlinx.android.synthetic.main.main_page_fragment.*
 import java.util.*
 
 /**
@@ -20,28 +18,30 @@ import java.util.*
  */
 class MainPageFragment : BaseFragment() {
 
+
 //    val listView : RecyclerView by bindView(R.id.main_page_fragment_recycler_list_view_id)
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        val fragmentView = View.inflate(context, R.layout.main_page_fragment,container)
-        ButterKnife.bind(this,fragmentView)
+        val fragmentView = inflater?.inflate(R.layout.main_page_fragment,container,false)
+//        ButterKnife.bind(this,fragmentView)
 
-        val listView = fragmentView.findViewById(R.id.main_page_fragment_recycler_list_view_id) as RecyclerView
         val mAdapter = MyResyclerAdapter(getGeolabers())
         listView.layoutManager = LinearLayoutManager(context)
         listView.adapter = mAdapter
+
+        listView.layoutManager
 //        initListView()
 
-        return fragmentView
+        return fragmentView!!
     }
 
 
 
-//    fun initListView(){
-//        val mAdapter = MyResyclerAdapter(getGeolabers())
-//        listView.layoutManager = LinearLayoutManager(context)
-//        listView.adapter = mAdapter
-//    }
+    fun initListView(){
+        val mAdapter = MyResyclerAdapter(getGeolabers())
+        listView.layoutManager = LinearLayoutManager(context)
+        listView.adapter = mAdapter
+    }
 
     fun getGeolabers(): List<Geolaber> {
         val labers = ArrayList<Geolaber>()
