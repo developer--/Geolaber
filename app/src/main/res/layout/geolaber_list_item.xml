@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:padding="5dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <android.support.v7.widget.CardView
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:elevation="2dp"
+        android:foreground="?android:attr/selectableItemBackground"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        tools:targetApi="lollipop">
 
-        <RelativeLayout
+        <android.support.percent.PercentRelativeLayout
             android:id="@+id/list_item_card_container_layout_id"
-            android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
 
             <ImageView
                 android:id="@+id/list_item_geolaber_profile_pic_image_view_id"
-                android:background="@color/colorPrimary"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_aspectRatio="178%"
+                app:layout_widthPercent="100%"
                 />
 
             <com.awesomethings.geolaber.ui.custom.CTextView
                 android:id="@+id/list_item_geolaber_name_text_view_id"
-                android:layout_toRightOf="@id/list_item_geolaber_profile_pic_image_view_id"
+                android:layout_below="@id/list_item_geolaber_profile_pic_image_view_id"
                 android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
                 android:text="გიჟი ალექსა"
                 app:font_name="EX_CAPS"
                 android:layout_width="wrap_content"
@@ -37,16 +42,16 @@
 
             <com.awesomethings.geolaber.ui.custom.CTextView
                 android:id="@+id/list_item_geolaber_job_type_text_view_id"
-                android:layout_below="@id/list_item_geolaber_name_text_view_id"
-                android:layout_toRightOf="@id/list_item_geolaber_profile_pic_image_view_id"
                 android:text="პროფესია : კაი კაცი"
+                android:layout_below="@id/list_item_geolaber_name_text_view_id"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 />
 
-        </RelativeLayout>
+        </android.support.percent.PercentRelativeLayout>
 
     </android.support.v7.widget.CardView>
 

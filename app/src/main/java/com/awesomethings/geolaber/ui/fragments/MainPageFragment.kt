@@ -1,4 +1,4 @@
-package com.awesomethings.geolaber.ui
+package com.awesomethings.geolaber.ui.fragments
 
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -40,7 +40,7 @@ class MainPageFragment : BaseFragment() {
             val geolaber = Geolaber()
             geolaber.name = DummyData.NAMES[i]
             geolaber.jobType = DummyData.JOB_TYPES[i]
-
+            geolaber.imageUrl = DummyData.PROFILE_PICTURES[i]
             labers.add(geolaber)
         }
         return labers

@@ -10,6 +10,7 @@ import butterknife.bindView
 import com.awesomethings.geolaber.R
 import com.awesomethings.geolaber.models.Geolaber
 import com.awesomethings.geolaber.ui.custom.CTextView
+import com.awesomethings.geolaber.util.extensions.setImage
 
 /**
  * Created by Jemo on 7/30/16.
@@ -41,6 +42,7 @@ class MyRecyclerAdapter(val myData: List<Geolaber>) : RecyclerView.Adapter<MyRec
             this.geolaber = geolaber
             holderNameTextView.text = geolaber.name
             holderJobTypeTextView.text = geolaber.jobType
+            holderImageView.setImage(geolaber.imageUrl)
         }
 
     }
