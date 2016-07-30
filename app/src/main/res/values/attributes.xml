@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CTextView">
+        <attr name="font_name" format="enum">
+            <enum name="EX_CAPS" value="1"/>
+            <enum name="EX_DEFAULT" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>
