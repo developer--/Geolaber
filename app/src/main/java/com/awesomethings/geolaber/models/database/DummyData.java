@@ -5,7 +5,7 @@ package com.awesomethings.geolaber.models.database;
  */
 
 public class DummyData {
-    public static final String[] NAMES = {"შმაჰოუნი","შპოკემონშიკი","შმილიანერი","შმაღალი","შშოთი","შპავლიკა","შმლატარა"};
+    public static final String[] NAMES = {"შმალექსა","შპოკემონშიკი","შმილიანერი","შმაღალი","შშოთი","შპავლიკა","შმლატარა"};
     public static final String[] JOB_TYPES = {"ASP","Android","PHP","PHP","iOS","მენტორი","მენტორი"};
     public static final String[] PROFILE_PICTURES = {
             "https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/13041475_1365113510181413_6516982828007413072_o.jpg",

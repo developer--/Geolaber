@@ -18,6 +18,7 @@ import java.util.*
  */
 class MainPageFragment : BaseFragment() {
 
+
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val fragmentView = inflater?.inflate(R.layout.main_page_fragment,container,false)
         return fragmentView!!
@@ -27,6 +28,7 @@ class MainPageFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
         initListView()
     }
+
 
     fun initListView(){
         val mAdapter = MyRecyclerAdapter(getGeolabers())
