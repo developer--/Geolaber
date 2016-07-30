@@ -10,15 +10,14 @@ import butterknife.bindView
 import com.awesomethings.geolaber.R
 import com.awesomethings.geolaber.models.Geolaber
 import com.awesomethings.geolaber.ui.custom.CTextView
-import com.awesomethings.geolaber.util.extensions.setImage
 
 /**
  * Created by Jemo on 7/30/16.
  */
-class MyResyclerAdapter (val myData: List<Geolaber>) : RecyclerView.Adapter<MyResyclerAdapter.MyHolder>() {
+class MyRecyclerAdapter(val myData: List<Geolaber>) : RecyclerView.Adapter<MyRecyclerAdapter.MyHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MyHolder? {
-        val itemView = View.inflate(parent!!.context, R.layout.geolaber_list_item,parent)
+        val itemView = View.inflate(parent!!.context, R.layout.geolaber_list_item, null)
         return MyHolder(itemView)
     }
 
@@ -26,22 +25,22 @@ class MyResyclerAdapter (val myData: List<Geolaber>) : RecyclerView.Adapter<MyRe
         return myData.size
     }
 
-    override fun onBindViewHolder(holder: MyResyclerAdapter.MyHolder?, position: Int) {
+    override fun onBindViewHolder(holder: MyRecyclerAdapter.MyHolder?, position: Int) {
         holder?.geolaber = myData[position]
+        holder?.setUpGeolaber(holder.geolaber)
     }
 
     class MyHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
-        var geolaber : Geolaber = null!!
+        var geolaber = Geolaber()
 
         val holderNameTextView: CTextView by bindView(R.id.list_item_geolaber_name_text_view_id)
         val holderJobTypeTextView : CTextView by bindView(R.id.list_item_geolaber_job_type_text_view_id)
         val holderImageView: ImageView by bindView(R.id.list_item_geolaber_profile_pic_image_view_id)
 
-        init {
-            ButterKnife.bind(this,itemView)
+        fun setUpGeolaber(geolaber: Geolaber){
+            this.geolaber = geolaber
             holderNameTextView.text = geolaber.name
             holderJobTypeTextView.text = geolaber.jobType
-//            holderImageView.setImage(geolaber.imageUrl)
         }
 
     }

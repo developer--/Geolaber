@@ -7,7 +7,7 @@ import com.awesomethings.geolaber.ui.base.BaseFragment
 import java.util.*
 
 /**
- * Created by Master on 7/30/16.
+ * Created by Jemo on 7/30/16.
  */
 class MyPagerAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm) {
     var fragments = Factory.create()
@@ -22,6 +22,10 @@ class MyPagerAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment {
         return fragments[position]
+    }
+
+    override fun getPageTitle(position: Int): CharSequence {
+        return fragments[position].getTitle();
     }
 
     override fun getCount(): Int {

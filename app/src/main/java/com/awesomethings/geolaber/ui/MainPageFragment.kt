@@ -9,7 +9,7 @@ import com.awesomethings.geolaber.R
 import com.awesomethings.geolaber.models.Geolaber
 import com.awesomethings.geolaber.models.database.DummyData
 import com.awesomethings.geolaber.ui.base.BaseFragment
-import com.awesomethings.geolaber.util.adapters.MyResyclerAdapter
+import com.awesomethings.geolaber.util.adapters.MyRecyclerAdapter
 import kotlinx.android.synthetic.main.main_page_fragment.*
 import java.util.*
 
@@ -18,32 +18,23 @@ import java.util.*
  */
 class MainPageFragment : BaseFragment() {
 
-
-//    val listView : RecyclerView by bindView(R.id.main_page_fragment_recycler_list_view_id)
-
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val fragmentView = inflater?.inflate(R.layout.main_page_fragment,container,false)
-//        ButterKnife.bind(this,fragmentView)
-
-        val mAdapter = MyResyclerAdapter(getGeolabers())
-        listView.layoutManager = LinearLayoutManager(context)
-        listView.adapter = mAdapter
-
-        listView.layoutManager
-//        initListView()
-
         return fragmentView!!
     }
 
-
+    override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initListView()
+    }
 
     fun initListView(){
-        val mAdapter = MyResyclerAdapter(getGeolabers())
+        val mAdapter = MyRecyclerAdapter(getGeolabers())
         listView.layoutManager = LinearLayoutManager(context)
         listView.adapter = mAdapter
     }
 
-    fun getGeolabers(): List<Geolaber> {
+    fun getGeolabers() : List<Geolaber> {
         val labers = ArrayList<Geolaber>()
         for (i in DummyData.NAMES.indices) {
             val geolaber = Geolaber()
@@ -54,4 +45,9 @@ class MainPageFragment : BaseFragment() {
         }
         return labers
     }
+
+    override fun getTitle(): String {
+        return "შმასტავი"
+    }
+
 }
