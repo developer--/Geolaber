@@ -19,7 +19,6 @@ import java.util.*
  */
 class MainPageFragment : BaseFragment() {
 
-
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val fragmentView = inflater?.inflate(R.layout.main_page_fragment,container,false)
         return fragmentView!!
@@ -31,18 +30,25 @@ class MainPageFragment : BaseFragment() {
     }
 
 
+    private lateinit var mAdapter : MyRecyclerAdapter
     fun initListView(){
-        val mAdapter = MyRecyclerAdapter(getGeolabers())
+        mAdapter = MyRecyclerAdapter(getGeolabers())
         listView.layoutManager = LinearLayoutManager(context)
         listView.adapter = mAdapter
+        setItemClickListener()
+    }
+
+    fun setItemClickListener() {
         mAdapter.setItemClickListener(object : MyRecyclerAdapter.OnItemClickListener {
             override fun onItemClick(item: Geolaber) {
                 Toast.makeText(context,item.name,Toast.LENGTH_SHORT).show()
             }
-
         })
     }
 
+    /**
+     * returns list of geolabers
+     */
     fun getGeolabers() : List<Geolaber> {
         val labers = ArrayList<Geolaber>()
         for (i in DummyData.NAMES.indices) {
@@ -55,6 +61,9 @@ class MainPageFragment : BaseFragment() {
         return labers
     }
 
+    /**
+     * returns the page title
+     */
     override fun getTitle(): String {
         return "შმასტავი"
     }

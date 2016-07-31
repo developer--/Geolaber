@@ -14,7 +14,6 @@ class EventsFragment : BaseFragment() {
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val fragmentView = inflater?.inflate(R.layout.events_fragment,container,false)
-
         return fragmentView!!
     }
 
