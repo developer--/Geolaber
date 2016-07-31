@@ -49,11 +49,9 @@ open class MyRecyclerAdapter(val myData: List<Geolaber>) : RecyclerView.Adapter<
             }
         }
 
-
-
     }
 
-    private var itemClickListener : OnItemClickListener = null!!
+    private lateinit var itemClickListener : OnItemClickListener
     companion object fun setItemClickListener(listener:OnItemClickListener) {
         this.itemClickListener = listener
     }
