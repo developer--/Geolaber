@@ -3,21 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/events_list_view_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v7.widget.CardView
-            android:layout_margin="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
 
-            <com.awesomethings.geolaber.ui.custom.CTextView
-                android:id="@+id/events_tmp_text_view_id"
-                android:padding="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </android.support.v7.widget.CardView>
-
-    </ScrollView>
 </LinearLayout>
