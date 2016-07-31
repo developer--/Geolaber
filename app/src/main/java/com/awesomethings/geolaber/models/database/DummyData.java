@@ -53,7 +53,7 @@ public class DummyData {
                     "https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/10468029_772305616133797_6891288645532548034_o.jpg"
             },
             {
-                    
+
             }
     };
 }

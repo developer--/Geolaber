@@ -44,6 +44,11 @@ dependencies {
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'de.hdodenhof:circleimageview:2.0.0'
     compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+
+    compile 'com.github.kittinunf.fuel:fuel:1.1.0' //for JVM
+    compile 'com.github.kittinunf.fuel:fuel-android:1.1.0' //for Android
+    compile 'com.github.kittinunf.fuel:fuel-rxjava:1.1.0' //for RxJava support
     testCompile 'junit:junit:4.12'
 }
 repositories {
