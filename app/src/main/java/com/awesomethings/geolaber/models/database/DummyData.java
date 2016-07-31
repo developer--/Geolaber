@@ -5,8 +5,8 @@ package com.awesomethings.geolaber.models.database;
  */
 
 public class DummyData {
-    public static final String[] NAMES = {"შმალექსა","შპოკემონშიკი","შმილიანერი","შმაღალი","შშოთი","შპავლიკა","შმლატარა"};
-    public static final String[] JOB_TYPES = {"ASP","Android","PHP","PHP","iOS","მენტორი","მენტორი"};
+    public static final String[] NAMES = {"შმალექსა","შპოკემონშიკი","შმილიანერი","შმაღალი","შშოთი","შპავლიკა","შმლატარა","ლაშანტე"};
+    public static final String[] JOB_TYPES = {"ASP","Android","PHP","PHP","iOS","მენტორი","მენტორი","მენტორი"};
     public static final String[] PROFILE_PICTURES = {
             "https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/13041475_1365113510181413_6516982828007413072_o.jpg",
             "https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/10390228_1640844629514308_3094131094639863337_n.jpg?oh=fe9a34c341c7b9183037fa24b3516af7&oe=582CD01C",
@@ -14,7 +14,8 @@ public class DummyData {
             "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xat1/t31.0-8/13071706_1332760246740416_928300517260653182_o.jpg",
             "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-frc3/v/t1.0-9/995395_553460308052138_800022192_n.jpg?oh=94d3fbfccdacd1585a7a3c8ec62ad781&oe=585EDD5E&__gda__=1482556417_4197f9f6cecdd3a262b121a954f2effd",
             "https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/329206_4088234415598_673021759_o.jpg",
-            "https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/10710391_863908906966192_8116061041837760088_o.jpg"
+            "https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/10710391_863908906966192_8116061041837760088_o.jpg",
+            "https://fbcdn-photos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-0/p206x206/13124955_1382741098418654_2299124287300984636_n.jpg?oh=23b179d2952b54f465478fb89a6df85d&oe=581CF4E1&__gda__=1479608138_4088623b8907a884391bc691b33d3401"
     };
 
     public static final String[][] GALLERY = {
@@ -50,6 +51,9 @@ public class DummyData {
                     "https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/10873519_891575954206762_6256204539791035537_o.jpg",
                     "https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/t31.0-8/272078_469599866404375_1750664243_o.jpg",
                     "https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/10468029_772305616133797_6891288645532548034_o.jpg"
+            },
+            {
+                    
             }
     };
 }
