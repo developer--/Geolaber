@@ -9,9 +9,6 @@ import com.awesomethings.geolaber.ui.base.BaseFragment
 import com.awesomethings.geolaber.util.adapters.EventListAdapter
 import com.facebook.AccessToken
 import com.facebook.GraphRequest
-import kotlinx.android.synthetic.main.events_fragment.*
-import org.json.JSONObject
-import org.json.JSONStringer
 
 /**
  * Created by Jemo on 7/31/16.
