@@ -52,6 +52,7 @@ class MainPageFragment : BaseFragment(), MyRecyclerAdapter.OnItemClickListener {
             geolaber.jobType = DummyData.JOB_TYPES[i]
             geolaber.imageUrl = DummyData.PROFILE_PICTURES[i]
 
+            geolaber.gallery.add(geolaber.imageUrl)
             for (j in DummyData.GALLERY[i].indices) {
                 geolaber.gallery.add(DummyData.GALLERY[i][j])
             }
