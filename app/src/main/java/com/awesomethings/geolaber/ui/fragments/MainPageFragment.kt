@@ -5,6 +5,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.awesomethings.geolaber.R
 import com.awesomethings.geolaber.models.Geolaber
 import com.awesomethings.geolaber.models.database.DummyData
@@ -34,6 +35,12 @@ class MainPageFragment : BaseFragment() {
         val mAdapter = MyRecyclerAdapter(getGeolabers())
         listView.layoutManager = LinearLayoutManager(context)
         listView.adapter = mAdapter
+        mAdapter.setItemClickListener(object : MyRecyclerAdapter.OnItemClickListener {
+            override fun onItemClick(item: Geolaber) {
+                Toast.makeText(context,item.name,Toast.LENGTH_SHORT).show()
+            }
+
+        })
     }
 
     fun getGeolabers() : List<Geolaber> {

@@ -1,5 +1,6 @@
 package com.awesomethings.geolaber.util.adapters
 
+import android.support.v7.widget.CardView
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
@@ -32,7 +33,7 @@ open class MyRecyclerAdapter(val myData: List<Geolaber>) : RecyclerView.Adapter<
 
     inner class MyHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
         var geolaber = Geolaber()
-        val holderContainer : RelativeLayout by bindView(R.id.list_item_card_container_layout_id)
+        val cardView : CardView by bindView(R.id.list_item_card_view_id)
         val holderNameTextView: CTextView by bindView(R.id.list_item_geolaber_name_text_view_id)
         val holderJobTypeTextView : CTextView by bindView(R.id.list_item_geolaber_job_type_text_view_id)
         val holderImageView: ImageView by bindView(R.id.list_item_geolaber_profile_pic_image_view_id)
@@ -43,8 +44,8 @@ open class MyRecyclerAdapter(val myData: List<Geolaber>) : RecyclerView.Adapter<
             holderJobTypeTextView.text = geolaber.jobType
             holderImageView.setImage(geolaber.imageUrl)
 
-            holderContainer.setOnClickListener {
-//                itemClickListener.onItemClick(geolaber)
+            cardView.setOnClickListener {
+                itemClickListener.onItemClick(geolaber)
             }
         }
 
@@ -52,10 +53,10 @@ open class MyRecyclerAdapter(val myData: List<Geolaber>) : RecyclerView.Adapter<
 
     }
 
-//    private var itemClickListener : OnItemClickListener = null!!
-//    companion object fun setItemClickListener(listener:OnItemClickListener) {
-//        this.itemClickListener = listener
-//    }
+    private var itemClickListener : OnItemClickListener = null!!
+    companion object fun setItemClickListener(listener:OnItemClickListener) {
+        this.itemClickListener = listener
+    }
 
     interface OnItemClickListener {
         fun onItemClick(item: Geolaber)
