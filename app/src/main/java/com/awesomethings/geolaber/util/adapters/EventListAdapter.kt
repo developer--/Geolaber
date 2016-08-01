@@ -7,7 +7,8 @@ import android.view.ViewGroup
 import butterknife.bindView
 import com.awesomethings.geolaber.R
 import com.awesomethings.geolaber.models.EventModel
-import com.awesomethings.geolaber.ui.custom.CTextView
+import com.awesomethings.geolaber.util.extensions.showOneParagraph
+import com.awesomethings.geolaber.view.custom.CTextView
 
 /**
  * Created by Master on 7/31/16.
@@ -37,8 +38,8 @@ class EventListAdapter(val myData: List<EventModel>) : RecyclerView.Adapter<Even
         fun bind(eventModel: EventModel){
             this.eventModel = EventModel()
             holderNameTextView.text = eventModel.name
-            holderDescription.text = eventModel.description
             startTime.text = eventModel.startTime
+            holderDescription.text = eventModel.description.showOneParagraph()
 
             cardView.setOnClickListener {
                 itemClickListener.onItemClick(eventModel)

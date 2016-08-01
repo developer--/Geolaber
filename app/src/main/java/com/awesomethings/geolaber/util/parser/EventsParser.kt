@@ -2,7 +2,7 @@ package com.awesomethings.geolaber.util.parser
 
 import android.os.AsyncTask
 import com.awesomethings.geolaber.models.EventModel
-import com.awesomethings.geolaber.ui.presenter.interfaces.ParseFinishedListener
+import com.awesomethings.geolaber.interfaces.ParseFinishedListener
 import com.facebook.GraphResponse
 import org.json.JSONObject
 

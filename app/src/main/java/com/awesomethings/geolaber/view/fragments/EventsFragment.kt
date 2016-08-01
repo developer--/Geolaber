@@ -1,4 +1,4 @@
-package com.awesomethings.geolaber.ui.fragments
+package com.awesomethings.geolaber.view.fragments
 
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -7,9 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.awesomethings.geolaber.R
 import com.awesomethings.geolaber.models.EventModel
-import com.awesomethings.geolaber.ui.base.BaseFragment
-import com.awesomethings.geolaber.ui.presenter.EventsPresenter
-import com.awesomethings.geolaber.ui.presenter.interfaces.IEventListView
+import com.awesomethings.geolaber.view.base.BaseFragment
+import com.awesomethings.geolaber.presenter.EventsPresenter
+import com.awesomethings.geolaber.interfaces.IEventListView
 import com.awesomethings.geolaber.util.adapters.EventListAdapter
 import kotlinx.android.synthetic.main.events_fragment.*
 
@@ -40,7 +40,6 @@ class EventsFragment : BaseFragment() , IEventListView{
             override fun onItemClick(item: EventModel) {
 
             }
-
         })
     }
 

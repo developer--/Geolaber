@@ -1,4 +1,4 @@
-package com.awesomethings.geolaber.ui.fragments
+package com.awesomethings.geolaber.view.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,8 +9,8 @@ import android.view.ViewGroup
 import com.awesomethings.geolaber.R
 import com.awesomethings.geolaber.models.Geolaber
 import com.awesomethings.geolaber.models.database.DummyData
-import com.awesomethings.geolaber.ui.activities.DetailPageActivity
-import com.awesomethings.geolaber.ui.base.BaseFragment
+import com.awesomethings.geolaber.view.activities.DetailPageActivity
+import com.awesomethings.geolaber.view.base.BaseFragment
 import com.awesomethings.geolaber.util.adapters.MyRecyclerAdapter
 import kotlinx.android.synthetic.main.main_page_fragment.*
 import java.util.*
@@ -19,7 +19,6 @@ import java.util.*
  * Created by Jemo on 7/30/16.
  */
 class MainPageFragment : BaseFragment(), MyRecyclerAdapter.OnItemClickListener {
-
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val fragmentView = inflater?.inflate(R.layout.main_page_fragment,container,false)
@@ -31,7 +30,6 @@ class MainPageFragment : BaseFragment(), MyRecyclerAdapter.OnItemClickListener {
         initListView()
     }
 
-
     private lateinit var mAdapter : MyRecyclerAdapter
     fun initListView(){
         mAdapter = MyRecyclerAdapter(getGeolabers())
@@ -39,7 +37,6 @@ class MainPageFragment : BaseFragment(), MyRecyclerAdapter.OnItemClickListener {
         listView_Id.adapter = mAdapter
         mAdapter.setItemClickListener(this)
     }
-
 
     /**
      * returns list of geolabers
@@ -61,6 +58,9 @@ class MainPageFragment : BaseFragment(), MyRecyclerAdapter.OnItemClickListener {
         return labers
     }
 
+    /**
+     * item click listener callback
+     */
     override fun onItemClick(item: Geolaber) {
         val intent = Intent(context,DetailPageActivity::class.java)
         intent.putExtra("clickedItem",item)

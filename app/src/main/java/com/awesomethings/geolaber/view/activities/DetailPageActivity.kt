@@ -1,4 +1,4 @@
-package com.awesomethings.geolaber.ui.activities
+package com.awesomethings.geolaber.view.activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

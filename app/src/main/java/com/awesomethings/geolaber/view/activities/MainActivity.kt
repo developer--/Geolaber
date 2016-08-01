@@ -1,4 +1,4 @@
-package com.awesomethings.geolaber.ui.activities
+package com.awesomethings.geolaber.view.activities
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.awesomethings.geolaber.R
-import com.awesomethings.geolaber.ui.fragments.EventsFragment
-import com.awesomethings.geolaber.ui.fragments.MainPageFragment
+import com.awesomethings.geolaber.view.fragments.EventsFragment
+import com.awesomethings.geolaber.view.fragments.MainPageFragment
 import com.awesomethings.geolaber.util.adapters.MyPagerAdapter
 import com.facebook.*
 import com.facebook.login.LoginManager

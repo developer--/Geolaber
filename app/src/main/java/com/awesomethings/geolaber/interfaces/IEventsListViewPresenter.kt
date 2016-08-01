@@ -1,4 +1,4 @@
-package com.awesomethings.geolaber.ui.presenter.interfaces
+package com.awesomethings.geolaber.interfaces
 
 
 /**

@@ -8,7 +8,7 @@ import android.widget.ImageView
 import butterknife.bindView
 import com.awesomethings.geolaber.R
 import com.awesomethings.geolaber.models.Geolaber
-import com.awesomethings.geolaber.ui.custom.CTextView
+import com.awesomethings.geolaber.view.custom.CTextView
 import com.awesomethings.geolaber.util.extensions.setImage
 
 /**

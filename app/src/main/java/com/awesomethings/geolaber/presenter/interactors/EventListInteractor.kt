@@ -1,9 +1,9 @@
-package com.awesomethings.geolaber.ui.presenter.interactors
+package com.awesomethings.geolaber.presenter.interactors
 
 import android.os.Bundle
 import com.awesomethings.geolaber.models.EventModel
-import com.awesomethings.geolaber.ui.presenter.interfaces.IEventsFinishedListener
-import com.awesomethings.geolaber.ui.presenter.interfaces.ParseFinishedListener
+import com.awesomethings.geolaber.interfaces.IEventsFinishedListener
+import com.awesomethings.geolaber.interfaces.ParseFinishedListener
 import com.awesomethings.geolaber.util.parser.EventsParser
 import com.facebook.AccessToken
 import com.facebook.GraphRequest
@@ -26,7 +26,6 @@ class EventListInteractor : ParseFinishedListener{
                 response ->
                 EventsParser(this).execute(response)
             }
-
         val parameters = Bundle()
         parameters.putString("fields", "events")
         request.parameters = parameters

@@ -1,4 +1,4 @@
-package com.awesomethings.geolaber.ui.custom
+package com.awesomethings.geolaber.view.custom
 
 import android.content.Context
 import android.content.res.TypedArray

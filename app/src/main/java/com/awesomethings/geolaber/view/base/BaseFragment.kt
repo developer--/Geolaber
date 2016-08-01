@@ -1,4 +1,4 @@
-package com.awesomethings.geolaber.ui.base
+package com.awesomethings.geolaber.view.base
 
 import android.support.v4.app.Fragment
 
