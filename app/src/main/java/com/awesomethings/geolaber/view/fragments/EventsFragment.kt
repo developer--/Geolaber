@@ -20,7 +20,7 @@ class EventsFragment : BaseFragment() , IEventListView {
 
     private lateinit var mAdapter : EventListAdapter
     private lateinit var presenter : EventsPresenter
-
+    private val geolabPageId = "1458720214418272"
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val fragmentView = inflater?.inflate(R.layout.events_fragment,container,false)
         presenter = EventsPresenter(this)
@@ -29,7 +29,7 @@ class EventsFragment : BaseFragment() , IEventListView {
 
     override fun onResume() {
         super.onResume()
-        presenter.loadEvents("1458720214418272")
+        presenter.loadEvents(geolabPageId)
     }
 
     override fun onEventsLoadedSuccess(eventsList: MutableList<EventModel>) {
@@ -38,7 +38,7 @@ class EventsFragment : BaseFragment() , IEventListView {
         events_list_view_id.adapter = mAdapter
         mAdapter.setItemClickListener(object : EventListAdapter.OnItemClickListener {
             override fun onItemClick(item: EventModel) {
-                
+
             }
         })
     }
