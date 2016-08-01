@@ -2,8 +2,8 @@ package com.awesomethings.geolaber.presenter.interactors
 
 import android.os.Bundle
 import com.awesomethings.geolaber.models.EventModel
-import com.awesomethings.geolaber.interfaces.IEventsFinishedListener
-import com.awesomethings.geolaber.interfaces.ParseFinishedListener
+import com.awesomethings.geolaber.interfaces.events.IEventsFinishedListener
+import com.awesomethings.geolaber.interfaces.events.ParseFinishedListener
 import com.awesomethings.geolaber.util.parser.EventsParser
 import com.facebook.AccessToken
 import com.facebook.GraphRequest
@@ -11,7 +11,7 @@ import com.facebook.GraphRequest
 /**
  * Created by Jemo on 8/1/16.
  */
-class EventListInteractor : ParseFinishedListener{
+class EventListInteractor : ParseFinishedListener {
 
     private lateinit var listener : IEventsFinishedListener
     constructor(listener : IEventsFinishedListener){

@@ -2,9 +2,9 @@ package com.awesomethings.geolaber.presenter
 
 import com.awesomethings.geolaber.models.EventModel
 import com.awesomethings.geolaber.presenter.interactors.EventListInteractor
-import com.awesomethings.geolaber.interfaces.IEventListView
-import com.awesomethings.geolaber.interfaces.IEventsListViewPresenter
-import com.awesomethings.geolaber.interfaces.IEventsFinishedListener
+import com.awesomethings.geolaber.interfaces.events.IEventListView
+import com.awesomethings.geolaber.interfaces.events.IEventsListViewPresenter
+import com.awesomethings.geolaber.interfaces.events.IEventsFinishedListener
 
 /**
  * Created by Jemo on 8/1/16.

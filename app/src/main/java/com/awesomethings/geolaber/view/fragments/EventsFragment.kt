@@ -9,14 +9,14 @@ import com.awesomethings.geolaber.R
 import com.awesomethings.geolaber.models.EventModel
 import com.awesomethings.geolaber.view.base.BaseFragment
 import com.awesomethings.geolaber.presenter.EventsPresenter
-import com.awesomethings.geolaber.interfaces.IEventListView
+import com.awesomethings.geolaber.interfaces.events.IEventListView
 import com.awesomethings.geolaber.util.adapters.EventListAdapter
 import kotlinx.android.synthetic.main.events_fragment.*
 
 /**
  * Created by Jemo on 7/31/16.
  */
-class EventsFragment : BaseFragment() , IEventListView{
+class EventsFragment : BaseFragment() , IEventListView {
 
     private lateinit var mAdapter : EventListAdapter
     private lateinit var presenter : EventsPresenter
