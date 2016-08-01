@@ -35,8 +35,8 @@ class MainPageFragment : BaseFragment(), MyRecyclerAdapter.OnItemClickListener {
     private lateinit var mAdapter : MyRecyclerAdapter
     fun initListView(){
         mAdapter = MyRecyclerAdapter(getGeolabers())
-        listView.layoutManager = LinearLayoutManager(context)
-        listView.adapter = mAdapter
+        listView_Id.layoutManager = LinearLayoutManager(context)
+        listView_Id.adapter = mAdapter
         mAdapter.setItemClickListener(this)
     }
 

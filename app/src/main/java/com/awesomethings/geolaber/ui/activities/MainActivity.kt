@@ -1,10 +1,11 @@
-package com.awesomethings.geolaber
+package com.awesomethings.geolaber.ui.activities
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import com.awesomethings.geolaber.R
 import com.awesomethings.geolaber.ui.fragments.EventsFragment
 import com.awesomethings.geolaber.ui.fragments.MainPageFragment
 import com.awesomethings.geolaber.util.adapters.MyPagerAdapter
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         FacebookSdk.sdkInitialize(applicationContext)
         setContentView(R.layout.activity_main)
-        callbackManager = CallbackManager.Factory.create()
+        callbackManager = com.facebook.CallbackManager.Factory.create()
         loginToFacebook()
         setUpUI()
     }
