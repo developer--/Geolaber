@@ -1,4 +1,4 @@
-package com.awesomethings.geolaber.interfaces.events
+package com.awesomethings.geolaber.interfaces.events_page
 
 import com.awesomethings.geolaber.models.EventModel
 

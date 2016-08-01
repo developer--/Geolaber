@@ -1,7 +1,7 @@
 package com.awesomethings.geolaber.presenter
 
 import android.app.Activity
-import com.awesomethings.geolaber.interfaces.login.ILoginView
+import com.awesomethings.geolaber.interfaces.login_page.ILoginView
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException
@@ -19,9 +19,6 @@ class LoginPresenter  {
         this.loginView = loginView
     }
 
-    /**
-     * facebook ლოგინი
-     */
     fun loginToFacebook(callbackManager : CallbackManager, mActivity : Activity) {
         try {
             LoginManager.getInstance().logInWithReadPermissions(mActivity, Collections.singletonList("public_profile"))
@@ -33,7 +30,6 @@ class LoginPresenter  {
                         override fun onCancel() {
                             loginView.loginFailed()
                         }
-
                         override fun onError(exception: FacebookException) {
                             loginView.loginFailed()
                         }

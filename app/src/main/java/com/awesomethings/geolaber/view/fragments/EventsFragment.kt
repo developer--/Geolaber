@@ -9,7 +9,7 @@ import com.awesomethings.geolaber.R
 import com.awesomethings.geolaber.models.EventModel
 import com.awesomethings.geolaber.view.base.BaseFragment
 import com.awesomethings.geolaber.presenter.EventsPresenter
-import com.awesomethings.geolaber.interfaces.events.IEventListView
+import com.awesomethings.geolaber.interfaces.events_page.IEventListView
 import com.awesomethings.geolaber.util.adapters.EventListAdapter
 import kotlinx.android.synthetic.main.events_fragment.*
 
@@ -38,7 +38,7 @@ class EventsFragment : BaseFragment() , IEventListView {
         events_list_view_id.adapter = mAdapter
         mAdapter.setItemClickListener(object : EventListAdapter.OnItemClickListener {
             override fun onItemClick(item: EventModel) {
-
+                
             }
         })
     }
