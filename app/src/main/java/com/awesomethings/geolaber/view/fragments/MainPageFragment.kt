@@ -11,14 +11,14 @@ import com.awesomethings.geolaber.models.Geolaber
 import com.awesomethings.geolaber.models.database.DummyData
 import com.awesomethings.geolaber.view.activities.DetailPageActivity
 import com.awesomethings.geolaber.view.base.BaseFragment
-import com.awesomethings.geolaber.util.adapters.MyRecyclerAdapter
+import com.awesomethings.geolaber.util.adapters.GeolaberListAdapter
 import kotlinx.android.synthetic.main.main_page_fragment.*
 import java.util.*
 
 /**
  * Created by Jemo on 7/30/16.
  */
-class MainPageFragment : BaseFragment(), MyRecyclerAdapter.OnItemClickListener {
+class MainPageFragment : BaseFragment(), GeolaberListAdapter.OnItemClickListener {
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val fragmentView = inflater?.inflate(R.layout.main_page_fragment,container,false)
@@ -30,12 +30,12 @@ class MainPageFragment : BaseFragment(), MyRecyclerAdapter.OnItemClickListener {
         initListView()
     }
 
-    private lateinit var mAdapter : MyRecyclerAdapter
+    private lateinit var mAdapterGeolaberList: GeolaberListAdapter
     fun initListView(){
-        mAdapter = MyRecyclerAdapter(getGeolabers())
+        mAdapterGeolaberList = GeolaberListAdapter(getGeolabers())
         listView_Id.layoutManager = LinearLayoutManager(context)
-        listView_Id.adapter = mAdapter
-        mAdapter.setItemClickListener(this)
+        listView_Id.adapter = mAdapterGeolaberList
+        mAdapterGeolaberList.setItemClickListener(this)
     }
 
     /**

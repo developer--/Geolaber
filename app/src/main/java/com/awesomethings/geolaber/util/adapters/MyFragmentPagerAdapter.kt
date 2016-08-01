@@ -9,7 +9,7 @@ import java.util.*
 /**
  * Created by Jemo on 7/30/16.
  */
-class MyPagerAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm) {
+class MyFragmentPagerAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm) {
     var fragments = Factory.create()
 
     companion object Factory {

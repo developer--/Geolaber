@@ -3,7 +3,7 @@ package com.awesomethings.geolaber.view.activities
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.awesomethings.geolaber.R
-import com.awesomethings.geolaber.util.adapters.MyPagerAdapter
+import com.awesomethings.geolaber.util.adapters.MyFragmentPagerAdapter
 import com.awesomethings.geolaber.view.fragments.EventsFragment
 import com.awesomethings.geolaber.view.fragments.MainPageFragment
 import kotlinx.android.synthetic.main.activity_main.*
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun initPager(){
-        val mAdapter = MyPagerAdapter(supportFragmentManager)
+        val mAdapter = MyFragmentPagerAdapter(supportFragmentManager)
         mAdapter.addFragment(MainPageFragment())
         mAdapter.addFragment(EventsFragment())
         main_view_pager_id.adapter = mAdapter

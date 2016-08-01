@@ -14,7 +14,7 @@ import com.awesomethings.geolaber.util.extensions.setImage
 /**
  * Created by Jemo on 7/30/16.
  */
-open class MyRecyclerAdapter(val myData: List<Geolaber>) : RecyclerView.Adapter<MyRecyclerAdapter.MyHolder>() {
+open class GeolaberListAdapter(val myData: List<Geolaber>) : RecyclerView.Adapter<GeolaberListAdapter.MyHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MyHolder? {
         val itemView = View.inflate(parent!!.context, R.layout.geolaber_list_item, null)
@@ -25,7 +25,7 @@ open class MyRecyclerAdapter(val myData: List<Geolaber>) : RecyclerView.Adapter<
         return myData.size
     }
 
-    override fun onBindViewHolder(holder: MyRecyclerAdapter.MyHolder?, position: Int) {
+    override fun onBindViewHolder(holder: GeolaberListAdapter.MyHolder?, position: Int) {
         holder?.geolaber = myData[position]
         holder?.bind(holder.geolaber )
     }
