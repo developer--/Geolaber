@@ -25,13 +25,13 @@ class LoginPresenter  {
             LoginManager.getInstance().registerCallback(callbackManager,
                     object : FacebookCallback<LoginResult> {
                         override fun onSuccess(loginResult: LoginResult) {
-                            loginView.navigateToMainActivity()
+                            loginView.onLoginSuccess()
                         }
                         override fun onCancel() {
-                            loginView.loginFailed()
+                            loginView.onLoginFailed()
                         }
                         override fun onError(exception: FacebookException) {
-                            loginView.loginFailed()
+                            loginView.onLoginFailed()
                         }
                     })
         }catch (e:Exception){

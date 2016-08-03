@@ -26,13 +26,13 @@
                 android:layout_height="wrap_content" />
 
             <com.awesomethings.geolaber.view.custom.CTextView
-                android:id="@+id/event_item_start_time_text_view_id"
+                android:id="@+id/eventStartTimeTextView_ID"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <com.awesomethings.geolaber.view.custom.CTextView
-                android:id="@+id/event_item_description_text_view_id"
+                android:id="@+id/eventDescriptionTextView_ID"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />

@@ -32,8 +32,8 @@ class EventListAdapter(val myData: List<EventModel>) : RecyclerView.Adapter<Even
         var eventModel = EventModel()
         val cardView : CardView by bindView(R.id.events_list_item_cardview_id)
         val holderNameTextView: CTextView by bindView(R.id.event_item_name_text_view_id)
-        val holderDescription: CTextView by bindView(R.id.event_item_description_text_view_id)
-        val startTime: CTextView by bindView(R.id.event_item_start_time_text_view_id)
+        val holderDescription: CTextView by bindView(R.id.eventDescriptionTextView_ID)
+        val startTime: CTextView by bindView(R.id.eventStartTimeTextView_ID)
 
         fun bind(eventModel: EventModel){
             this.eventModel = EventModel()

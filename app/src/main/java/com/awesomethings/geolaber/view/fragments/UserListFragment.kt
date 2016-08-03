@@ -18,7 +18,7 @@ import java.util.*
 /**
  * Created by Jemo on 7/30/16.
  */
-class MainPageFragment : BaseFragment(), GeolaberListAdapter.OnItemClickListener {
+class UserListFragment : BaseFragment(), GeolaberListAdapter.OnItemClickListener {
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val fragmentView = inflater?.inflate(R.layout.main_page_fragment,container,false)

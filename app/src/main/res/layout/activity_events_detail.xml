@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_events_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.awesomethings.geolaber.view.activities.EventsDetailActivity"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_id"
+        android:contentInsetLeft="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@color/colorPrimary"
+        tools:targetApi="lollipop">
+
+        <RelativeLayout
+            android:id="@+id/test_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.awesomethings.geolaber.view.custom.CTextView
+                android:id="@+id/toolbar_title"
+                android:text="შმივენთი"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/events_detail_page_cardview_id"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:elevation="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:targetApi="lollipop">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.awesomethings.geolaber.view.custom.CTextView
+                    android:id="@+id/eventNameTextView_ID"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.awesomethings.geolaber.view.custom.CTextView
+                    android:id="@+id/eventStartTimeTextView_ID"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.awesomethings.geolaber.view.custom.CTextView
+                    android:id="@+id/eventDescriptionTextView_ID"
+                    android:layout_margin="10dp"
+                    android:autoLink="web"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>
