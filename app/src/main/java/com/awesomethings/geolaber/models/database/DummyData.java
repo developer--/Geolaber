@@ -14,7 +14,7 @@ public class DummyData {
             "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xat1/t31.0-8/13071706_1332760246740416_928300517260653182_o.jpg",
             "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-frc3/v/t1.0-9/995395_553460308052138_800022192_n.jpg?oh=94d3fbfccdacd1585a7a3c8ec62ad781&oe=585EDD5E&__gda__=1482556417_4197f9f6cecdd3a262b121a954f2effd",
             "https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/329206_4088234415598_673021759_o.jpg",
-            "https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/10710391_863908906966192_8116061041837760088_o.jpg",
+            "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/13876429_1212589645438723_2569687336944241409_n.jpg?oh=01cb2eb32ae3cb8b2231de00ee6eab2b&oe=585EABB3",
             "https://fbcdn-photos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-0/p206x206/13124955_1382741098418654_2299124287300984636_n.jpg?oh=23b179d2952b54f465478fb89a6df85d&oe=581CF4E1&__gda__=1479608138_4088623b8907a884391bc691b33d3401"
     };
 
@@ -47,7 +47,10 @@ public class DummyData {
                     "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xal1/v/t1.0-9/13590453_10204885481896533_3084701149355817190_n.jpg?oh=9ece37ded1ee4f7a64275a2c17f7ffc4&oe=582CC481&__gda__=1479442032_087aa765d2b4b5cf0490aa44d1196b8e"
             },
             {
+                    "https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/10710391_863908906966192_8116061041837760088_o.jpg",
+                    "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/13876211_1212589592105395_8084396924059301258_n.jpg?oh=2b394dcc4c5ee7eb9a4023806e77b072&oe=581EA7CA",
                     "https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/10914803_891576737540017_7859302629180272887_o.jpg",
+                    "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfl1/v/t1.0-9/13932884_1212589608772060_2190910361248561550_n.jpg?oh=af515ad4e3bd39759e951d0e3bb3794e&oe=58144DC9&__gda__=1478573452_2cadbb0b81177c3aba30d10735c7e565",
                     "https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/10873519_891575954206762_6256204539791035537_o.jpg",
                     "https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/t31.0-8/272078_469599866404375_1750664243_o.jpg",
                     "https://scontent-frt3-1.xx.fbcdn.net/t31.0-8/10468029_772305616133797_6891288645532548034_o.jpg"
